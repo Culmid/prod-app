@@ -8,6 +8,15 @@
         "standard-with-typescript"
     ],
     "overrides": [
+        {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off",
+          "@typescript-eslint/consistent-type-assertions": "off"
+        }
+      }
     ],
     "parserOptions": {
         "project": ["tsconfig.json"],
